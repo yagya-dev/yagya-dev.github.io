@@ -1,0 +1,41 @@
+.strikeoff{
+    text-decoration: line-through;
+    color: red;
+}
+.tna{
+    height:30px;
+    width:150px;
+    position:absolute;
+    left: 125px;
+}
+.tna1{
+
+    height:60px;
+    width:150px;
+}
+#add{
+    position: absolute;
+    left: 150px;
+    top: 105px;
+}
+#des{
+    
+    height: 100px;
+    width: 200px;
+    background-color: rgb(238, 255, 0);
+    left: 200px;
+    top: 250px;
+}
+#dashd{
+    background-color:grey;
+    position: absolute;
+    
+    width: 40%;
+    left: 410px;
+    top: 150px;
+}
+.deco{
+    text-align: center;
+}
+
+

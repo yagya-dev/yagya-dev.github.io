@@ -1,0 +1,25 @@
+
+
+
+<body data-ng-app="dashboard" data-ng-controller="dashboardCtrl" >
+        <br>
+        <br>
+        <br>
+        <h1 class="deco">Welcome</h1>
+        <div id="dashd">
+                <b>ToDo Name:</b><input type="text" ng-model="tName" class="tna" ng-required="true"><br><br>
+        <b>ToDo Description:</b><input type="text" ng-model="tExperience" class="tna1"><br><br>
+        <button ng-if="tName!=unDefined&&tName!=null && tName!='' " ng-click="addItem()" class="btn btn-primary" id="add">ADD</button><br>
+            
+              <div   ng-mouseover="open=true" ng-mouseleave="open=false"
+                        ng-repeat="todo in list">
+                      <input type = "checkbox" ng-model="todo.checked"> 
+                         <div ng-class = "{'strikeoff': todo.checked}" class="name1">
+                              <b>{{todo.Name}}</b></div> 
+                          <button ng-show="open" ng-click="delete($index)" class="btn btn-primary btn1">
+                                delete</button>  
+                        <div ng-show="open" id="des">{{obj.desc}}</div>
+                </div> 
+        </div>
+
+</body>

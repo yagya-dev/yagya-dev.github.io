@@ -1,0 +1,17 @@
+<header><h2 id="home">Home</h2>
+    <ul>
+        <li><button data-ng-click="gotoDashboard()" class="btn btn-primary" id="dash">
+            Dashboard</button></li>
+        </ul>
+   <button id="round" ng-click="open=myFun()" class="btn btn-primary">{{user|myfilter|uppercase}}</button>
+</header>
+<main class="color">
+    <ui-view></ui-view>
+</main>
+<div id="tag" ng-show="open" class="blow">
+    <div class="name-deco">
+        <b>{{user}}</b>
+    </div>
+    <button type="button" class="btn btn-primary" data-ng-click="gotoProfile()"  id="team">Team</button>
+    <button type="button" class="btn btn-primary"  data-ng-click="logout()"  id="logout">Logout</button>
+</div>
